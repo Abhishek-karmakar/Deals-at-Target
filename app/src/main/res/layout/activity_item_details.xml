@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/fab_margin"
+    tools:context="com.abhishek.TargetDeals.activity.ItemDetailsActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imgItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imgDeailsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+<LinearLayout
+    android:id="@+id/linearlayoutprice"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_below="@id/imgItemImage"
+    >
+    <TextView
+        android:id="@+id/tvSalePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:text="$8.98"
+        android:textColor="@color/aisle"
+        android:textSize="35dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:textSize="30dp"
+        android:text="$17.99"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayoutprice"
+        android:gravity="center_horizontal"
+        android:text="Junior Boyfriend V Tee"
+        android:textSize="@dimen/text_heading_25" />
+
+    <TextView
+        android:id="@+id/tvItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvItemName"
+        android:maxLines="1000"
+        android:scrollbars="vertical"
+        android:text="ex proident id sunt consequat sit eu eiusmod elit ut adipisicing duis id ullamco mollit aliqua adipisicing commodo do ullamco elit sit in occaecat consectetur non deserunt dolore culpa ut quis cillum mollit dolor aliquip incididunt mollit officia commodo ut sunt cillum ad aliquip consectetur proident culpa ut sint tempor adipisicing labore proident nulla culpa aliquip eiusmod qui cillum non minim sunt sint ad occaecat incididunt ipsum in sint irure velit officia ex cupidatat consectetur aliquip ipsum ullamco" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_to_list"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_to_cart"
+            android:background="@color/aisle"/>
+    </LinearLayout>
+
+</RelativeLayout>

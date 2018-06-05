@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5266d2</color>
+    <color name="colorPrimaryDark">#18191b</color>
+    <color name="colorAccent">#504b4d</color>
+    <color name="aisle">#ff0033</color>
+    <color name="ship">#111112</color>
+</resources>
